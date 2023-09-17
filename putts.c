@@ -11,8 +11,8 @@ int putts(char *c)
 
 {
 	int counter = 0;
-	
-	if (c) 
+
+	if (c)
 	{
 		for (counter = 0; c[counter] != '\0'; counter++)
 		{
