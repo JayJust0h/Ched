@@ -37,6 +37,7 @@ int _printf(const char *format, ...)
 	else if (format[i + 1] == '%')
 	{
 		putcher('%');
+		putcher(format[i + 1]);
 		i++;
 	}
 	count++;
