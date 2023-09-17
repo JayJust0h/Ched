@@ -30,7 +30,7 @@ int _printf(const char *format, ...)
 	}
 	else if (format[i + 1] == 's')
 	{
-		s_count = putts(va_arg(args, char *));
+		s_count = puuts(va_arg(args, char *));
 			i++;
 			count += (s_count - 1);
 	}
@@ -39,7 +39,7 @@ int _printf(const char *format, ...)
 		putcher('%');
 		i++;
 	}
-	count++;
+	count += 1;
 	}
 	va_end(args);
 	return (count);
