@@ -39,7 +39,7 @@ int _printf(const char *format, ...)
 		putcher('%');
 		i++;
 	}
-	count++;
+	count += 1;
 	}
 	va_end(args);
 	return (count);

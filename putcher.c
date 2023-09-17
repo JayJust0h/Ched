@@ -1,5 +1,6 @@
 #include "main.h"
 #include <unistd.h>
+
 /**
  * putcher - Prints the characters.
  * @c: Character input.
