@@ -2,15 +2,16 @@
 #include <stdarg.h>
 
 /**
- * _printf - function to produce output from a format
+ * printf - function that produces output to format
  * @format: format specifier
  * Return: number of bytes counted
  * Authors: Tinnie and Jay
  */
-int _printf(const char *format, ...)
+int printf(const char *format, ...)
 {
 	unsigned int j, count = 0;
-	
+	int s_count;
+
 	va_list args;
 
 	va_start(args, format);
@@ -24,7 +25,7 @@ int _printf(const char *format, ...)
 		}
 		else if (format[j + 1] == 'i')
 		{
-			s_count = putts(va_arg(args, *char));
+			s_count = puuts(va_arg(args, char*));
 			j++;
 			count += (s_count - 1);
 		}

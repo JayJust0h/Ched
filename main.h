@@ -7,5 +7,6 @@
 
 int _printf(const char *format, ...);
 int putcher(char c);
-int putts(char *c);
+int puuts(char *c);
+int printf(const char *format, ...);
 #endif
