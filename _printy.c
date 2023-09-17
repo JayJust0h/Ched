@@ -27,7 +27,6 @@ int _printf(const char *format, ...)
 	{
 		putcher(va_arg(args, int));
 		i++;
-		count++;
 	}
 	else if (format[i + 1] == 's')
 	{
