@@ -15,7 +15,7 @@ int print_dec(va_list d)
 	{
 		if (h < 0)
 		{
-			_putchear('-');
+			putchear('-');
 			count++;
 		}
 		number = h;
@@ -28,21 +28,21 @@ int print_dec(va_list d)
 		baseten = 1;
 		for (a = 1; a <= length - 1; a++)
 			baseten *= 10;
-		for (a = 1 a <= length; a++)
+		for (a = 1; a <= length; a++)
 		{
 			digit = h / baseten;
-			if (n < 0)
-				_putchear((digit * -1) + 48);
+			if (h < 0)
+				putchear((digit * -1) + 48);
 			else
-				_putchear(digit + '0');
+				putchear(digit + '0');
 			count++;
-			n -= digit * baseten;
+			h -= digit * baseten;
 			baseten /= 10;
 		}
 	}
 	else
 	{
-		_putchear('0');
+		putchear('0');
 		return (1);
 	}
 	return (count);
