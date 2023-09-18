@@ -1,6 +1,7 @@
 #include "main.h"
 #include <stdarg.h>
 
+<<<<<<< HEAD
 /* Function to convert an integer to a string */
 void int_to_str(int num, char *num_str)
 {
@@ -74,6 +75,8 @@ int print_int(int num)
     return i;
 }
 
+=======
+>>>>>>> f07ad9ea8390840eff92c9a71ed7a56818bc84b2
 int _printf(const char *format, ...)
 {
     int chac_prnt = 0;

@@ -1,13 +1,13 @@
 #include "main.h"
 
 /**
- * putts - Prints the strings.
+ * puuts - Prints the strings.
  * @c: The string.
  * Return: The number of the bytes.
  * Tinnie and Jay
  */
 
-int putts(char *c)
+int puuts(char *c)
 
 {
 	int counter = 0;
