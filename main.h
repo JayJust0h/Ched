@@ -7,12 +7,13 @@
 #include <string.h>
 #include <unistd.h>
 
-
+void int_to_str(int num, char *num_str);
 int _printf(const char *format, ...);
 int putcher(char c);
 int puuts(char *c);
-<<<<<<< HEAD
-=======
+
 int printf(const char *format, ...);
->>>>>>> f07ad9ea8390840eff92c9a71ed7a56818bc84b2
+
+
+
 #endif
