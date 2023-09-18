@@ -2,14 +2,15 @@
 
 /**
  * print_int - prints an integer.
- * @z: the integer to print
+ * @i: the integer to print
+ * Author: Tinnie and Jay
  * Return: number of output printed
  */
-int print_int(va_list z)
+int print_int(va_list i)
 {
 	int digit, number, a, baseten, length, h, count = 0;
 
-	h = va_arg(z, int);
+	h = va_arg(i, int);
 	if (h != 0)
 	{
 		if (n < 0)
