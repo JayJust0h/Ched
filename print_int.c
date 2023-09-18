@@ -7,11 +7,9 @@
  */
 int print_int(va_list z)
 {
-	int digit, number, a, baseten, length, h;
+	int digit, number, a, baseten, length, h, count = 0;
+
 	h = va_arg(z, int);
-	int count = 0;
-	number = h;
-	length = 0;
 
 	if (h != 0)
 	{
@@ -20,6 +18,8 @@ int print_int(va_list z)
 			_putchear('-');
 			count++;
 		}
+		number = h;
+		length = 0;
 		while (number != 0)
 		{
 			number /= 10;
@@ -32,10 +32,18 @@ int print_int(va_list z)
 		{
 			digit = h / baseten;
 			if (h < 0)
-				_putchear((digit * - 1)
+				_putchear((digit * -1) + 48);
+			else
+				_putchear(digit + '0');
+			count++;
+			h -= digit * baseten;
+			baseten /= 10;
 		}
-	
 	}
-
-
+	else
+	{
+		_putchear('0');
+		return (1);
+	}
+	return (count);
 }
