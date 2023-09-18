@@ -10,7 +10,6 @@ int print_int(va_list z)
 	int digit, number, a, baseten, length, h, count = 0;
 
 	h = va_arg(z, int);
-
 	if (h != 0)
 	{
 		if (n < 0)
@@ -27,7 +26,7 @@ int print_int(va_list z)
 		}
 		baseten = 1;
 		for (a = 1; a <= length - 1; a++)
-		       baseten *= 10;
+			baseten *= 10;
 		for (a = 1; a <= len; a++)
 		{
 			digit = h / baseten;
