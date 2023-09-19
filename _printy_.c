@@ -20,6 +20,7 @@ int (*find_function(const char *format))(va_list)
 		{"b", print_bin},
 		{"u", print_unsig},
 		{"u", print_unsig},
+		{"R", print_rot13},
 		/**
 		{"r", print_rev},
 		{"r", print_rev},
@@ -27,7 +28,6 @@ int (*find_function(const char *format))(va_list)
 		{"o", print_octal},
 		{"x", print_x},
 		{"X", print_X},
-		{"R", print_rot13},
 		*/
 		{NULL, NULL}
 	};
