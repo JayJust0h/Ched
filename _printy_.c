@@ -18,8 +18,12 @@ int (*find_function(const char *format))(va_list)
 		{"r", print_rev},
 		{"r", print_rev},
 		{"b", print_bin},
-	/**
 		{"u", print_unsig},
+		{"u", print_unsig},
+		/**
+		{"r", print_rev},
+		{"r", print_rev},
+		{"b", print_bin},
 		{"o", print_octal},
 		{"x", print_x},
 		{"X", print_X},
