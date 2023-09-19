@@ -4,7 +4,6 @@
  * print_octal - converts unsigned ontegers to octal format.
  * @o: The unsigned integers for handling.
  * description: used to print the Octal format.
-<<<<<<< HEAD
  * Authors: Tinnie and Jay.
  */
 
@@ -46,6 +45,3 @@ int print_octal(va_list o)
 	}
 	return (count);
 }
-=======
- */
->>>>>>> 8ff7192f86f43a4e0b97a877c2ba2c6873483c71
