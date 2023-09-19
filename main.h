@@ -34,6 +34,4 @@ typedef struct code_format
 	int (*f)(va_list);
 } code_f;
 
-#endif /* mainH */
-
-
+#endif /* mainH contains the functions used in the project*/
