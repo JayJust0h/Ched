@@ -9,8 +9,8 @@ int print_rot13(va_list R)
 {
 	int a, h, count = 0;
 	char *r;
-	char input13[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZ abcdefghijklmnopqrstuvwxyz";
-	char output13[] = "NOPQRSTUVWXYZABCDEFGHIJKLM nopqrstuvwxyzabcdefghijklm";
+	char input13[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
+	char output13[] = "NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm";
 
 	r = va_arg(R, char *);
 	if (r == NULL)
