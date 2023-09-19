@@ -21,9 +21,9 @@ int print_hex(unsigned int no, unsigned int c)
 		number = no;
 		length = 0;
 		if (c)
-			diff = 'a' - ':';
-		else
 			diff = 'A' - ':';
+		else
+			diff = 'a' - ':';
 		while (number != 0)
 		{
 			number /= 16;
