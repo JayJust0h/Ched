@@ -1,16 +1,16 @@
 #include "main.h"
 
 /**
- * print_int - prints an integer.
- * @i: the integer to print
- * Author: Tinnie and Jay
- * Return: number of output printed
+ * print_dec - function to print decimals
+ * @d: integer to be printed
+ * Authors: Tinnie and Jay
+ * Return: output text size
  */
-int print_int(va_list i)
+int print_dec(va_list d)
 {
-	int digit, number, a, baseten, length, h, count = 0;
+	int length, baseten, number, a, count = 0, h, digit;
 
-	h = va_arg(i, int);
+	h = va_arg(d, int);
 	if (h != 0)
 	{
 		if (h < 0)
