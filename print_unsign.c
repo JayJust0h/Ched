@@ -1,12 +1,12 @@
 #include "main.h"
 
 /**
- * print_unsign - function to print an unsigned data
+ * print_unsig - function to print an unsigned data
  * @u: unsigned data type
  * Author: Tinnie and Jay
  * Return: output type
  */
-int print_unsign(va_list u)
+int print_unsig(va_list u)
 {
 	unsigned int length, baseten, a, number, digit, h;
 	int count = 0;
