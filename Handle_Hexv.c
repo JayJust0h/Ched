@@ -73,6 +73,6 @@ int print_X(va_list X)
 
 int print_x(va_list x)
 {
-        return (print_hex(va_arg(x, unsigned int), 0));
+	return (print_hex(va_arg(x, unsigned int), 0));
 }
 /* T&J */

@@ -23,4 +23,3 @@ int print_string(va_list s)
 	}
 	return (ch);
 }
-			

@@ -5,6 +5,7 @@
  * @o: The unsigned integers for handling.
  * description: used to print the Octal format.
  * Authors: Tinnie and Jay.
+ * Return: output.
  */
 
 int print_octal(va_list o)
@@ -27,7 +28,7 @@ int print_octal(va_list o)
 		}
 
 		baseten = 1;
-		for (ju = 1; ju <= length -1; ju++)
+		for (ju = 1; ju <= length - 1; ju++)
 			baseten *= 8;
 		for (ju = 1; ju <= length; ju++)
 		{
