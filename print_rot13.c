@@ -4,7 +4,7 @@
   * print_rot13 - prints string using the rot13.
   * @R: To convert string
   * Return: length output
-  Authors Tinnie & Jay
+  * Authors: Tinnie & Jay
   */
 int print_rot13(va_list R)
 {
