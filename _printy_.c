@@ -21,13 +21,13 @@ int (*find_function(const char *format))(va_list)
 		{"u", print_unsig},
 		{"u", print_unsig},
 		/**
-	*	{"r", print_rev},
-	*	{"r", print_rev},
-	*	{"b", print_bin},
-	*	{"o", print_octal},
-	*	{"x", print_x},
-	*	{"X", print_X},
-	*	{"R", print_rot13},
+		{"r", print_rev},
+		{"r", print_rev},
+		{"b", print_bin},
+		{"o", print_octal},
+		{"x", print_x},
+		{"X", print_X},
+		{"R", print_rot13},
 		*/
 		{NULL, NULL}
 	};
