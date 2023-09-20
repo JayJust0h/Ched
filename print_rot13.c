@@ -14,6 +14,7 @@ int print_rot13(va_list R)
 	char output[] = "NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm";
 
 	r = va_arg(R, char *);
+	/* If the input string is NULL, replace it with "(null)" */
 	if (r == NULL)
 		r = "(null)";
 	for (a = 0; r[a] != '\0'; a++)
@@ -22,6 +23,7 @@ int print_rot13(va_list R)
 		{
 			if (r[a] == input[h])
 			{
+				/*Print The Rot 13 char */
 				putchear(output[h]);
 				count++;
 				break;
